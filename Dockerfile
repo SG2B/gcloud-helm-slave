@@ -9,7 +9,7 @@ LABEL org.label-schema.vcs-ref=$VCS_REF \
 
 ENV CLOUDSDK_CORE_DISABLE_PROMPTS 1
 ENV PATH /opt/google-cloud-sdk/bin:$PATH
-ENV HELM_LATEST_VERSION="v2.9.1"
+ENV HELM_LATEST_VERSION="v2.10.0"
 
 USER root
 
