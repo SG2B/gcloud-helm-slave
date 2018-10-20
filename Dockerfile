@@ -19,7 +19,8 @@ RUN apt-get install -y jq \
       libseccomp-dev
 
 RUN curl https://sdk.cloud.google.com | bash && mv google-cloud-sdk /opt
-RUN gcloud components install kubectl
+RUN gcloud components update \
+ && gcloud components install beta kubectl
 
 RUN update-ca-certificates \
  && wget https://storage.googleapis.com/kubernetes-helm/helm-${HELM_LATEST_VERSION}-linux-amd64.tar.gz \
