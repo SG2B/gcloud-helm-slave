@@ -20,6 +20,8 @@ RUN apt-get install -y jq \
       libapparmor-dev \
       libseccomp-dev
 
+RUN apt-get install -y docker-ce docker-ce-cli containerd.io
+
 RUN apt-get -qqy update && apt-get install -qqy \
       curl \
       gcc \
