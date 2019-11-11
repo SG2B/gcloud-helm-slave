@@ -1,4 +1,4 @@
-FROM jenkinsci/jnlp-slave:3.35-5
+FROM jenkins/jnlp-slave:3.35-5
 MAINTAINER Julien Deruere <julien@sg2b.com>
 
 LABEL org.label-schema.vcs-ref=$VCS_REF \
